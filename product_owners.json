@@ -1,0 +1,22 @@
+{
+  "Entra": {
+    "owner": "Priya Nair",
+    "keywords": ["entra", "azure ad", "active directory", "sso", "single sign-on", "sign-in", "saml"]
+  },
+  "Windows": {
+    "owner": "Elena Garcia",
+    "keywords": ["windows"]
+  },
+  "Cloud Sync": {
+    "owner": "Marcus Lee",
+    "keywords": ["cloud sync", "cloudsync", "sync"]
+  },
+  "Billing": {
+    "owner": "David S",
+    "keywords": ["billing", "invoice", "payment", "charge", "refund"]
+  },
+  "Insights Analytics": {
+    "owner": "Priya Nair",
+    "keywords": ["insights", "insightdash", "analytics", "dashboard", "report"]
+  }
+}

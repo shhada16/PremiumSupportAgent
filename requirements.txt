@@ -1,0 +1,5 @@
+# Tested together with Python 3.12. Python 3.11+ recommended.
+mcp==2.2.0
+openai-agents==0.23.1  # Runs the agent loop and connects to server.py over MCP
+python-dotenv==1.2.4  # Loads OPENAI_API_KEY from MCP/.env
+streamlit==1.66.1  # Web front end: streamlit run streamlit_app.py

@@ -1,0 +1,122 @@
+{
+  "CS-1001": {
+    "customer_name": "Northwind Traders",
+    "product_name": "CloudSync Pro",
+    "created_date": "2026-09-28",
+    "title": "Files not syncing on Windows 11",
+    "description": "Customer reported that files saved in the shared folder stopped syncing after the 4.2 update. The tray icon shows 'Waiting for connection' although the network is fine.",
+    "case_owner": "Priya Nair",
+    "case_status": "Resolved",
+    "resolution": null
+  },
+  "CS-1002": {
+    "customer_name": "Contoso Ltd",
+    "product_name": "PayFlow Billing",
+    "created_date": "2026-09-30",
+    "title": "Duplicate charge on monthly invoice",
+    "description": "Customer was charged twice for the September subscription. Two identical transactions appear on their card statement on Sept 1.",
+    "case_owner": "Marcus Lee",
+    "case_status": "Resolved",
+    "resolution": "Confirmed a duplicate payment caused by a gateway retry on Sept 1. Refunded the second charge of $49.00; the customer will see it on their card within 5-7 business days."
+  },
+  "CS-1003": {
+    "customer_name": "Fabrikam Inc",
+    "product_name": "SecureAuth SSO",
+    "created_date": "2026-10-02",
+    "title": "Users locked out after password reset",
+    "description": "After an admin-triggered password reset, 12 users in the Finance group cannot sign in and receive error AUTH-403.",
+    "case_owner": "Elena Garcia",
+    "case_status": "Resolved",
+    "resolution": null
+  },
+  "CS-1004": {
+    "customer_name": "Adventure Works",
+    "product_name": "CloudSync Pro",
+    "created_date": "2026-10-05",
+    "title": "Request to increase storage quota",
+    "description": "Customer on the Team plan asks how to increase storage from 1 TB to 5 TB without changing plans.",
+    "case_owner": "Priya Nair",
+    "case_status": "Resolved",
+    "resolution": null
+  },
+  "CS-1005": {
+    "customer_name": "Tailspin Toys",
+    "product_name": "InsightDash Analytics",
+    "created_date": "2026-10-07",
+    "title": "Dashboard export to PDF is blank",
+    "description": "Exporting any dashboard to PDF produces a blank page in Chrome. Export to PNG works correctly.",
+    "case_owner": "David Okafor",
+    "case_status": "New",
+    "resolution": null
+  },
+  "CS-1006": {
+    "customer_name": "Wingtip Solutions",
+    "product_name": "PayFlow Billing",
+    "created_date": "2026-10-09",
+    "title": "Cannot update tax ID on account",
+    "description": "Customer gets a validation error when entering an EU VAT number in the billing settings page.",
+    "case_owner": "Marcus Lee",
+    "case_status": "In Progress",
+    "resolution": null
+  },
+  "CS-1007": {
+    "customer_name": "Litware Inc",
+    "product_name": "SecureAuth SSO",
+    "created_date": "2026-10-11",
+    "title": "Configure SAML with Okta",
+    "description": "Customer needs step-by-step guidance to configure SAML 2.0 single sign-on with Okta as the identity provider.",
+    "case_owner": "Elena Garcia",
+    "case_status": "Resolved",
+    "resolution": "Sent the SAML 2.0 setup guide for Okta and joined a call to configure the ACS URL, Entity ID, and signing certificate. Customer confirmed SSO sign-in works for all users."
+  },
+  "CS-1008": {
+    "customer_name": "Blue Yonder Airlines",
+    "product_name": "InsightDash Analytics",
+    "created_date": "2026-10-12",
+    "title": "Scheduled report emails not delivered",
+    "description": "Daily scheduled reports stopped arriving after Oct 10. No bounce messages were received and the schedule shows as active.",
+    "case_owner": "David Okafor",
+    "case_status": "New",
+    "resolution": null
+  },
+  "CS-1009": {
+    "customer_name": "Fabrikam Inc",
+    "product_name": "InsightDash Analytics",
+    "created_date": "2026-10-24",
+    "title": "Export to PDF fails",
+    "description": "When I try to export a dashboard to PDF, it fails with an error.",
+    "case_owner": "Priya Nair",
+    "case_status": "New",
+    "resolution": null
+  },
+  "CS-1010": {
+    "customer_name": "Shalini Inc",
+    "product_name": "InsightDash Analytics",
+    "created_date": "2026-10-24",
+    "title": "Export to PDF fails",
+    "description": "When I try to export a dashboard to PDF, it fails with an error.",
+    "case_owner": "Priya Nair",
+    "case_status": "Resolved",
+    "resolution": null
+  },
+  "CS-1011": {
+    "customer_name": "Fabrikam Inc",
+    "product_name": "InsightDash Analytics",
+    "created_date": "2026-10-24",
+    "title": "Export to PDF fails",
+    "description": "When I try to export a dashboard to PDF, it fails with an error.",
+    "case_owner": "Priya Nair",
+    "case_status": "New",
+    "resolution": null
+  },
+  "CS-1012": {
+    "customer_name": "Fabrikam Inc",
+    "product_name": "Entra",
+    "created_date": "2026-10-24",
+    "title": "Auth SSO is failing",
+    "description": "Auth SSO is failing due to permissions.",
+    "case_owner": "Priya Nair",
+    "case_status": "New",
+    "resolution": null
+  }
+}
