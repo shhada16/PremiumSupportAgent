@@ -5,12 +5,13 @@ import asyncio
 import json
 from pathlib import Path
 
-from agents import MaxTurnsExceeded
 import altair as alt
 import pandas as pd
 import streamlit as st
 
-from agent import DEFAULT_MODEL, MAX_TURNS, SAMPLE_QUESTIONS, SessionMemory, run_turn
+from agent import (
+    DEFAULT_MODEL, MAX_TURNS, SAMPLE_QUESTIONS, SessionMemory, TooManySteps, run_turn,
+)
 
 HERE = Path(__file__).parent
 CASES_FILE = HERE / "Supportcase.json"
@@ -43,14 +44,8 @@ def tool_output_text(output) -> str:
 
 def tool_steps(result) -> list:
     """Pair each tool request in a run with its MCP result."""
-    steps = []
-    for item in result.new_items:
-        if item.type == "tool_call_item":
-            steps.append({"name": item.raw_item.name,
-                          "arguments": getattr(item.raw_item, "arguments", ""), "output": ""})
-        elif item.type == "tool_call_output_item" and steps:
-            steps[-1]["output"] = tool_output_text(item.output)
-    return steps
+    return [{**call, "output": tool_output_text(call["output"])}
+            for call in result.tool_calls()]
 
 
 def show_steps(steps: list):
@@ -196,8 +191,8 @@ with chat_tab:
                                                   st.session_state.memory))
                     answer = str(result.final_output or "The agent returned no answer.")
                     steps = tool_steps(result)
-                    st.session_state.history = result.to_input_list()
-                except MaxTurnsExceeded:
+                    st.session_state.history = result.history
+                except TooManySteps:
                     answer = f"Stopped after {MAX_TURNS} model turns. Try a simpler question."
                 except Exception as exc:  # Show the problem in the chat, not a stack trace.
                     answer = (f"Could not complete the request: {exc}\n\nCheck that "

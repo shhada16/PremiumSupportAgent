@@ -7,9 +7,9 @@ from pathlib import Path
 import re
 import sys
 
-from mcp.server import MCPServer
+from mcp.server.fastmcp import FastMCP
 
-mcp = MCPServer("Support cases")
+mcp = FastMCP("Support cases", log_level="WARNING")  # No log line per tool call.
 CASES = Path(__file__).with_name("Supportcase.json")
 OWNERS = Path(__file__).with_name("product_owners.json")
 

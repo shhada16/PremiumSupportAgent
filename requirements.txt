@@ -1,5 +1,8 @@
 # Tested together with Python 3.12. Python 3.11+ recommended.
-mcp==2.2.0
-openai-agents==0.23.1  # Runs the agent loop and connects to server.py over MCP
-python-dotenv==1.2.4  # Loads OPENAI_API_KEY from MCP/.env
+langchain==1.4.9  # ReAct specialist agents (create_agent)
+langchain-mcp-adapters==0.3.2  # Loads the server.py tools over MCP as LangChain tools
+langchain-openai==1.7.4  # OpenAI chat model for LangChain
+langgraph==1.2.20  # Triage graph that routes each message to one specialist
+mcp==1.30.0  # langchain-mcp-adapters needs mcp below 2.0
+python-dotenv==1.2.4  # Loads OPENAI_API_KEY from .env
 streamlit==1.66.1  # Web front end: streamlit run streamlit_app.py
